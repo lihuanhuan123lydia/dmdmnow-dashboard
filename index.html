@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>面板地址已更新，正在跳转…</title>
+<script>
+// dmdmnow-dashboard -> dashboard：保留子路径与查询参数跳转
+var target = 'https://lihuanhuan123lydia.github.io/dashboard' + location.pathname.replace(/^\/dmdmnow-dashboard/, '') + location.search + location.hash;
+location.replace(target);
+</script>
+<meta http-equiv="refresh" content="2; url=https://lihuanhuan123lydia.github.io/dashboard/">
+</head>
+<body style="font-family:system-ui;background:#0f1420;color:#e6e9f0;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0">
+<div style="text-align:center">
+<p style="font-size:1.1rem;font-weight:700">面板地址已从 /dmdmnow-dashboard/ 更新为 /dashboard/</p>
+<p>正在自动跳转… 若未跳转，请点击：<a id="lnk" href="https://lihuanhuan123lydia.github.io/dashboard/" style="color:#60a5fa;word-break:break-all">lihuanhuan123lydia.github.io/dashboard/</a></p>
+</div>
+<script>document.getElementById('lnk').href = target;</script>
+</body>
+</html>
